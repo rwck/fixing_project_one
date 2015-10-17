@@ -3,7 +3,7 @@ function setClickers() {
 
   $("td").click(function(myID) {
     var myID = this.id;
-      // alert(myID);
+      clickTestSquare(myID);
       console.log(myID);
     });
   $("td").mousedown(function(myID) {
