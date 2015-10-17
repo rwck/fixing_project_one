@@ -1,27 +1,23 @@
 function setClickers() {
+  // $("td").mousedown(function(myID) {
 
-  $("td").click(function() {
-    $("td").mousedown(function() {
-      var myID = this.id;
-      // clickShadow(myID);
-      // CLICK();
-      var myID = this.id;
+  $("td").click(function(myID) {
+    var myID = this.id;
       // alert(myID);
-      clickTestSquare(myID);
-
-    })
-  })
-};
-
-var delay = 250;
+      console.log(myID);
+    });
+  $("td").mousedown(function(myID) {
+      var myID = this.id;
+    clickShadow(myID);
+  });
+  $("td").mouseup(function(myID) {
+      var myID = this.id;
+    clickShadow(myID);
+  });
+}
 
 function clickShadow(id) {
-  $("#" + id).toggleClass("button-pressed");
-  setTimeout(function() {
-    $("#" + id).toggleClass("button-pressed")
-  }, 250);
-  // setTimeout(function() {
-  //   $("#"+id).toggleClass("button-pressed")}, 250);
+  $('#'+id).toggleClass("button-pressed");
 }
 
 function clickTestSquare(id) {

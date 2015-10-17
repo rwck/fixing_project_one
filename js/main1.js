@@ -68,12 +68,12 @@ function drawGrid() {
   $(".injectTable").html(myHtml);
 }
 
-// NOW OBSOLEte
-function setGreen() {
-  $.each($myGame, function(i, l) {
-    $myGame[i] = $greenRow.slice();
-  });
-}
+// // NOW OBSOLEte
+// function setGreen() {
+//   $.each($myGame, function(i, l) {
+//     $myGame[i] = $greenRow.slice();
+//   });
+// }
 
 
 // c
@@ -144,7 +144,7 @@ function setColors() {
   $("td:contains('B')").addClass("blackBox");
 }
 
-setGreen();
+// setGreen();
 
 // writeGreen();
 turnBlack(3, 3);
